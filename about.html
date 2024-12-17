@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo - Digital Link Chile</title>
+
+    <!-- cargar fuentes -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
+
+    <!-- cargar estilos -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- cargar js -->
+    <script src="assets/js/menu-mobile.js" defer></script>
+    <script src="assets/js/navbar-fixed.js" defer></script>
+    <script src="assets/js/dark.js"></script>
+    <!-- <script src="assets/js/carousel.js"></script> -->
+</head>
+<body>
+    <!-- Boton modo oscuro -->
+    <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+        </button>
+    </div>
+
+      <!-- menu navegacion responsive -->
+      <div class="menu-mobile">
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a href="index.html" class="menu-mobile__link-logo">
+                    <img  class="menu-mobile__logo" src="assets/img/logotipo.png">
+                </a>
+
+            </div>
+
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+
+            </button>
+
+        </header>
+
+        <div class="menu-mobile__body">
+
+             <!-- NAVEGACION -->
+             <nav class="menu-mobile__nav">
+                <ul class="menu-mobile__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="menu-mobile__item">
+                        <a href="index.html" class="menu-mobile__link">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="menu-mobile__item">
+                        <a href="servicios.html" class="menu-mobile__link">Servicios
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="menu-mobile__submenu-mobile">
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="casosexito.html" class="menu-mobile__link">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="menu-mobile__item">
+                        <a href="about.html" class="menu-mobile__link">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="menu-mobile__item">
+                        <a href="preguntas.html" class="menu-mobile__link">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="contacto.html" class="menu-mobile__link">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+
+        </div>
+
+     </div>
+
+    <!-- layout principal -->
+
+    <div class="layout">
+
+    <!-- Menu -->
+    <section class="layout__menu">
+        <header class="menu__navbar">
+
+            <!-- LOGO -->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__link-logo">
+                    <img src="./assets/img/logohorizontal1.png" class="navbar__logo"/>
+
+                </a>
+
+            </div>
+
+        <!-- Boton de menu responsive -->
+            <div class="navbar__mobile-btn">
+                <button class="mobile-btn__wrap">
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+
+                </button>
+
+            </div>
+
+            <!-- NAVEGACION -->
+             <nav class="navbar__nav">
+                <ul class="nav__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__title">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="nav__item">
+                        <a href="servicios.html" class="nav__title">Servicios
+                            <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="nav__submenu">
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="nav__item">
+                        <a href="casosexito.html" class="nav__title">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__title">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="nav__item">
+                        <a href="preguntas.html" class="nav__title">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__title">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+        
+
+        </header>
+
+   <!-- Sección Quiénes Somos -->
+<section class="about-us">
+    <div class="about-us__container">
+        <div class="about-us__text">
+            <h1 class="about-us__title">Quiénes Somos</h1>
+            <p class="about-us__description">
+                Digital Link Chile es un empresa nacional especializada en servicios de seguridad. 
+                Ofrecemos una amplia gama de servicios que incluyen la revisión, reparación, mantención, asesoría técnica e instalación de equipos de seguridad electrónica. Su enfoque se centra en sistemas como CCTV, control de acceso, sistemas EAS, detección de intrusión y extinción de incendio. Trabajan con marcas líderes del mercado como Notifier, EST (General Electric), Secutrón, Honeywell, Bosch, Hikvision, entre otras.
+            </p>
+        </div>
+        <img src="./assets/img/SOMOS.png" alt="Quiénes Somos" class="about-us__image">
+    </div>
+
+    <div class="about-us__container">
+        <div class="about-us__text">
+            <h1 class="about-us__title">La importancia de la seguridad y el Resguardo de Bienes en el Ámbito Empresarial</h1>
+            <p class="about-us__description">
+                La protección de la vida y los activos de una empresa es esencial para garantizar su continuidad y éxito. Los riesgos como incendios representan una preocupación constante, siendo necesario implementar medidas de seguridad adecuadas.
+            </p>
+        </div>
+        <img src="./assets/img/seguridadada.png" alt="Seguridad" class="about-us__image">
+    </div>
+
+    <div class="about-us__container">
+        <div class="about-us__text">
+            <h1 class="about-us__title">Digital Link Chile: Garantía de Seguridad y Confianza en Sistemas de Protección</h1>
+            <p class="about-us__description">
+                Con más de 10 años de experiencia, Digital Link Chile se destaca por su compromiso en la instalación y mantenimiento de sistemas de seguridad avanzados. Su atención personalizada y soporte técnico 24/7 reflejan su dedicación a la protección de sus clientes.
+            </p>
+        </div>
+        <img src="./assets/img/confifanza.webp" alt="Garantía" class="about-us__image">
+    </div>
+
+    <div class="about-us__container">
+        <div class="about-us__text">
+            <h1 class="about-us__title">En Digital Link Chile</h1>
+            <p class="about-us__description">
+                En Digital Link, creemos que la seguridad y la formación continua son fundamentales para ofrecer servicios de alta calidad. Gracias a los cursos de mutualidad en riesgos de trabajo en altura y plataforma, nuestros empleados están mejor preparados para enfrentar cualquier desafío, proporcionando tranquilidad y confianza a nuestros clientes.
+            </p>
+        </div>
+        <img src="./assets/img/mutual.png" alt="Formación" class="about-us__image">
+    </div>
+</section>
+
+    <div class="carousel">
+        <div class="carousel__container">
+            <div class="carousel__item"><img src="assets/img/CCTV.png" alt="Imagen 1"></div>
+            <div class="carousel__item"><img src="assets/img/Contorl-de-acceso.png" alt="Imagen 2"></div>
+            <div class="carousel__item"><img src="assets/img/Deteccion-y-extincion-de-incendio.png" alt="Imagen 3"></div>
+            <!-- Añade más imágenes según sea necesario -->
+        </div>
+        <button class="carousel__button carousel__button--left">&lt;</button>
+        <button class="carousel__button carousel__button--right">&gt;</button>
+    </div>
+
+    <!-- Sección Equipo -->
+    <section class="team">
+        <h1 class="team__title">Nuestro Equipo</h1>
+        <div class="team__grid">
+            <div class="team__member">
+                <img src="assets/images/team1.jpg" alt="Miembro del equipo 1" class="team__img">
+                <h2 class="team__member-name">Juan Pérez</h2>
+                <p class="team__member-role">CEO</p>
+                <p class="team__member-description">Juan es el fundador y CEO de Digital Link Chile, con más de 20 años de experiencia en el sector de la seguridad electrónica.</p>
+            </div>
+            <div class="team__member">
+                <img src="assets/images/team2.jpg" alt="Miembro del equipo 2" class="team__img">
+                <h2 class="team__member-name">María González</h2>
+                <p class="team__member-role">CTO</p>
+                <p class="team__member-description">María es la CTO de la empresa, encargada de liderar el desarrollo tecnológico y la innovación en nuestros servicios.</p>
+            </div>
+            <div class="team__member">
+                <img src="assets/images/team3.jpg" alt="Miembro del equipo 3" class="team__img">
+                <h2 class="team__member-name">Carlos López</h2>
+                <p class="team__member-role">Gerente de Proyectos</p>
+                <p class="team__member-description">Carlos es el gerente de proyectos, responsable de asegurar que todos nuestros proyectos se completen a tiempo y dentro del presupuesto.</p>
+            </div>
+            <!-- Añade más miembros del equipo según sea necesario -->
+        </div>
+    </section>
+
+    <!-- clientes ---------------------------------------------------------->
+
+    <section class="layout__clients">
+        <div class="clients__container">
+
+            <header class="clients__header">
+                <h4 class="clients__subtitle">Nuestra Empresa Se Encuentra Certificada</h4>
+                <h2 class="clients__title">En Las Siguientes Marcas...</h2> 
+                <p class="clients__description">Desarrollamos a medida cualquier proyecto con los mejores sistemas y tecnologias </p>
+
+            </header>
+
+            <div class="clients__logos">
+                <article class="clients__item">
+                    <a href="https://www.kantech.com" class="clients__img" >
+                        <img src="./assets/img/1-Kantech.png" alt="Kantech">
+                    </a>
+                </article>
+            
+                <article class="clients__item">
+                    <a href="https://www.bosch.com" class="clients__img">
+                        <img src="./assets/img/bosch.png"  alt="Bosch">
+                    </a>
+                </article>
+            
+                <article class="clients__item">
+                    <a href="https://istccorp.com/es/edwards-es/" class="clients__img">
+                        <img src="./assets/img/edwards.png"  alt="Cliente 6">
+                    </a>
+                </article>
+            
+                <article class="clients__item">
+                    <a href="https://hikvision.com/es-la/" class="clients__img">
+                        <img src="./assets/img/hikvision.png"  alt="Cliente 5">
+                    </a>
+                </article>
+            </div>
+
+        </div>
+
+        <ul class="clients__client-shapes">
+            <li class="client-shapes__item client-shapes--shape1">
+                <div class="client-shapes__container">
+                    <img src="./assets/img/line-9.png" class="client-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+
+        
+    </section>
+    
+
+    
+
+
+   
+
+   
+    <!-- reseñas -->
+
+    <section class="layout__reviews">
+        <div class="reviews__grid">
+
+            <header class="reviews__header">
+                <h4 class="reviews__subtitle">
+                    Reseñas
+
+                </h4>
+                <h2 class="reviews__title">¿Que dicen nuestros clientes?</h2>
+                <p class="reviews__description">
+                    Nuestros clientes siempre salen satisfechos con los sistemas de seguridad electronica.
+                </p>
+
+            </header>
+
+            <!-- Contenedor de resañas -->
+             <div class="reviews__container">
+                <article class="reviews__review">
+                    <span class="review__company">
+                        <img src="./assets/img/google-2.png" class="review__img"/>
+                    </span>
+    
+                    <p class="review__description">
+                        La instalación del sistema de cámaras de seguridad en nuestra oficina fue impecable. El equipo de Digital Link Chile fue muy profesional y eficiente.
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/testimonial-2.png">
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">Google Chile</span>
+                            <span class="author__description">Oficina Central</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reviews__review">
+                    <span class="review__company">
+                        <img src="./assets/img/udemy.png" class="review__img"/>
+                    </span>
+                     
+                    <p class="review__description">
+                        Digital Link Chile nos ayudó a mejorar nuestro sistema de control de acceso. Ahora nos sentimos mucho más seguros y el sistema es muy fácil de usar.
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/testimonial-2.png">
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">Udemy</span>
+                            <span class="author__description">Departamento de Seguridad</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reviews__review">
+                    <span class="review__company">
+                        <img src="./assets/img/youtube.png" class="review__img"/>
+                    </span>
+    
+                    <p class="review__description">
+                        Estamos muy satisfechos con el sistema de detección de incendios instalado por Digital Link Chile. Su equipo fue muy profesional y el sistema funciona perfectamente.
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/testimonial-2.png">
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">YouTube Chile</span>
+                            <span class="author__description">Oficina Regional</span>
+                        </div>
+                    </div>
+                </article>
+
+
+             </div>
+             
+
+        </div>
+
+        <ul class="reviews__review-shapes">
+            <li class="review-shapes__item review-shapes--shape1">
+                <div class="review-shapes__container">
+                    <img src="./assets/img/bubble-1.png" class="review-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+
+
+    </section>
+
+    
+
+ 
+    <!-- noticias -->
+
+   
+    <!-- footer ------------------------------------------------------------>
+    <footer class="layout__footer">
+
+        <div class="footer__containes">
+
+            <section class="footer__top">
+                <ul class="footer__social">
+                    
+
+                    <li class="social__item">
+                        <a href="https://x.com/DigitalLinkSPA " class="social__link">
+                            <i class="fa-brands fa-x social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.youtube.com/@DigitalLinkChile " class="social__link">
+                            <i class="fa-brands fa-youtube social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.linkedin.com/company/digital-link-chile/ " class="social__link">
+                            <i class="fa-brands fa-linkedin social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/digitallinkchile/ " class="social__link">
+                            <i class="fa-brands fa-instagram social__img"></i>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__fleft">
+                    <div class="fleft__container">
+                        <h2 class="fleft__title">Contactanos!</h2>
+                            <p class="fleft__subtitle">
+                                Estamos aquí para ayudarte con cualquier consulta o proyecto que tengas en mente. 
+                                Nuestro equipo de expertos está disponible para ofrecerte la mejor solución en seguridad electrónica. 
+                                No dudes en contactarnos dejando tu correo para obtener más información sobre nuestros servicios y cómo podemos ayudarte a proteger lo que más te importa.
+                            </p>
+
+                            <div class="footer__contact-info">
+                                <ul class="contact-info__list">
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                                        <span class="contact-info__text">+56 9 2007 9581</span>
+                                    </li>
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                                        <span class="contact-info__text">+56 9 3785 9616</span>
+                                    </li>
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-envelope contact-info__icon"></i>
+                                        <span class="contact-info__text">info@digitallinkchile.cl</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        <!-- <form class="fleft__form">
+                            <div class="fleft__group">
+                                <span class="fleft__mail-icon">
+                                    <i class="fa-solid fa-envelope-open-text fleft__img"></i>
+                                </span>
+                                <input type="text" class="fleft__form-control" placeholder="Tu correo electronico">
+                                <button type="submit" class="fleft__btn">Enviar</button>
+                            </div>
+                        </form> -->
+
+                    </div>
+
+                </div>
+
+                <div class="footer__fright">
+                    <div class="footer__widget footer__widget--50">
+                        <h6 class="widget__title">Servicios</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">CCTV</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema Antirobo</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema de Extincion</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema de deteccion</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Recursos</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Sistemas Electricos</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Mantenciones</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Ultima tecnologia</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Soporte</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="contacto.html" class="widget__link">Contacto</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">   Politica y privacidad</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Terminos de Uso</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="footer__bottom">
+                <div class="footer__copyright">
+                    <span class="copyright__text">
+                        © 2021 Digital Link Chile. Todos los derechos reservados 
+                    </span>
+
+                </div>
+
+                <!-- <div class="footer__links">
+                    <ul class="footer__flinks">
+                        <li class="flinks__item flinks__item--separator">
+                            <a href="#" class="flinks__title">Politica de privacidad</a>
+
+                        </li>
+                        <li class="flinks__item">
+                            <a href="#" class="flinks__title">Terminos de uso</a>
+
+                        </li>
+
+                    </ul>
+
+                </div> -->
+
+
+            </section>
+
+        </div>
+
+     </footer>
+
+    </div>
+    
+
+    <!-- Resto del contenido -->
+</body>
+</html>

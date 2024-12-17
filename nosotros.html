@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Link Chile </title>
+
+    <!-- cargar fuentes  -->
+    <!-- Se cargan los estilos de las fuentes que se descargaron en el archivo predeterminado-->
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
+
+    <!-- cargar estilos -->
+    <!-- Se crea un archivo reset con el fin de que se resetee la pagina donde empazamos a tarabajar
+     y posterior se crea style.css donde estara todo el estilo del sitio web se cargan las rutas  -->
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/dark.css"> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+
+
+    <!-- cargar js -->
+     <script src="assets/js/menu-mobile.js"></script>
+     <script src="assets/js/navbar-fixed.js"></script>
+     <!-- <script src="assets/js/dark.js"></script> -->
+     
+</head>
+<body>
+    <!-- Boton modo oscuro -->
+     <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+
+        </button>
+
+     </div>
+    <!-- menu navegacion responsive -->
+     <div class="menu-mobile">
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a href="index.html" class="menu-mobile__link-logo">
+                    <img  class="menu-mobile__logo" src="assets/img/logotipo.png">
+                </a>
+
+            </div>
+
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+
+            </button>
+
+        </header>
+
+        <div class="menu-mobile__body">
+
+             <!-- NAVEGACION -->
+             <nav class="menu-mobile__nav">
+                <ul class="menu-mobile__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="menu-mobile__item">
+                        <a href="index.html" class="menu-mobile__link">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="menu-mobile__item">
+                        <a href="servicios.html" class="menu-mobile__link">Servicios
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="menu-mobile__submenu-mobile">
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="casosexito.html" class="menu-mobile__link">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="menu-mobile__item">
+                        <a href="preguntas.html" class="menu-mobile__link">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="contacto.html" class="menu-mobile__link">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+
+        </div>
+
+     </div>
+
+    <!-- layout principal -->
+
+    <div class="layout">
+
+    <!-- Menu -->
+    <section class="layout__menu">
+        <header class="menu__navbar">
+
+            <!-- LOGO -->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__link-logo">
+                    <img src="./assets/img/logohorizontal1.png" class="navbar__logo"/>
+
+                </a>
+
+            </div>
+
+        <!-- Boton de menu responsive -->
+            <div class="navbar__mobile-btn">
+                <button class="mobile-btn__wrap">
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+
+                </button>
+
+            </div>
+
+            <!-- NAVEGACION -->
+             <nav class="navbar__nav">
+                <ul class="nav__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__title">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="nav__item">
+                        <a href="servicios.html" class="nav__title">Servicios
+                            <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="nav__submenu">
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="nav__item">
+                        <a href="casosexito.html" class="nav__title">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="nav__item">
+                        <a href="preguntas.html" class="nav__title">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__title">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+        
+
+        </header>
+        
+
+    </section>
+
+    <!-- banner -->
+     <section class="layout__banner">
+
+        <!-- contenido del banner -->
+
+        <header class="banner__content">
+            <h1 class="banner__title">Soluciones de Seguridad Electronica</h1>
+            <a href="#" class="banner__btn">Ver trabajos</a>
+
+        </header>
+
+        <!-- formas e imagenes del banner -->
+
+        <div class="banner__shapes">
+            <ul class="shapes__list">
+
+                <!-- Lista de fotos y elementos que estan el banner -->
+                <li class="shapes__item shapes__item--shape1">
+                    <div class="shapes__container">
+                        <img class="shapes__img" src="./assets/img/banner-shape-1.png">
+
+                    </div>
+                </li>
+
+                <li class="shapes__item shapes__item--shape2">
+                    <div class="shapes__container">
+                        <img class="shapes__img" src="./assets/img/banner-shape-2.png">
+
+                    </div>
+                </li>
+
+                <li class="shapes__item shapes__item--shape3">
+                    <div class="shapes__container">
+                        <img class="shapes__img" src="./assets/img/bubble-16.png">
+
+                    </div>
+                </li>
+
+                <li class="shapes__item shapes__item--shape4">
+                    <div class="shapes__container">
+                        <img class="shapes__img" src="./assets/img/bubble-15.png">
+
+                    </div>
+                </li>
+
+                <li class="shapes__item shapes__item--shape5">
+                    <div class="shapes__container">
+                        <img class="shapes__img" src="./assets/img/bubble-14.png">
+
+                    </div>
+                </li>
+
+                <li class="shapes__item shapes__item--shape6">
+                    <div class="shapes__container">
+                        <img class="shapes__img" src="./assets/img/bubble-16.png">
+
+                    </div>
+                </li>
+
+                <li class="shapes__item shapes__item--shape7">
+                    <div class="shapes__container">
+                        <img class="shapes__img" src="./assets/img/bubble-26.png">
+
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+     </section>
+
+    <!-- servicios -->
+    <section class="layout__services">
+
+        <div class="services__grid">
+
+            <!-- Contenido de la cabecera de los servicios -->
+          <header class="services__header">
+             <p class="services__subtitle">¿Que podemos hacer por ti?</p>
+            <h2 class="services__title">Servicios que te <br> pueden ayudar</h2>
+          </header>
+
+         <!-- se crea un div para almacenar un pequeña lista con los articulos/servicios que ofrece -->
+
+          <div class="services__list">
+             <article class="services__service services__service--bottom">
+                <div class="service__container-img">
+                    <img class="service__img" src="./assets/img/icon-1.png" alt="Diseño"/>
+                </div>
+
+                <div class="service__content">
+                    <h3 class="service__title">
+                        <a href="#" class="service__link">CCTV</a>
+                    </h3>
+
+                    <p class="service__description">Intalacion enfocandose en su mantencion, revision asesoria posteriormente</p>
+                    <a class="service__more" href="#">Leer más</a>
+                </div>
+
+             </article>
+
+            <article class="services__service services__service--middle">
+                <div class="service__container-img">
+                    <img class="service__img" src="./assets/img/icon-2.png" alt="control"/>
+                </div>
+
+                <div class="service__content">
+                    <h3 class="service__title">
+                        <a href="#" class="service__link">Control de Acceso</a>
+                    </h3>
+
+                    <p class="service__description">aportamos con controles de acceso instalados por nuestros mismos trabajadores que realizan asesoria y mantenciones posteriores</p>
+                    <a class="service__more" href="#">Leer más</a>
+                </div>
+
+            </article>
+
+            <article class="services__service services__service--top">
+                <div class="service__container-img">
+                    <img class="service__img" src="./assets/img/icon-3.png" alt="Diseño"/>
+                </div>
+
+                <div class="service__content">
+                    <h3 class="service__title">
+                        <a href="#" class="service__link">Alarma contra Robos</a>
+                    </h3>
+
+                    <p class="service__description">Intalacion enfocandose en su mantencion, revision asesoria posteriormente</p>
+                    <a class="service__more" href="#">Leer más</a>
+                </div>
+
+            </article>
+          </div>
+
+        </div>
+
+        <!-- lista de imagenes que van en el servicio -->
+
+        <ul class="services__service-shapes">
+            <li class="service-shapes__item service-shapes--shape1">
+                <div class="service-shapes__container">
+                    <img src="./assets/img/circle-2.png" class="service-shapes__img">
+
+                </div>
+
+            </li>
+
+            <li class="service-shapes__item service-shapes--shape2">
+                <div class="service-shapes__container">
+                    <img src="./assets/img/bubble-2.png" class="service-shapes__img">
+
+                </div>
+
+            </li>
+
+            <li class="service-shapes__item service-shapes--shape3">
+                <div class="service-shapes__container">
+                    <img src="./assets/img/bubble-1.png" class="service-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+
+        
+    </section>
+
+
+    
+
+    <!-- reseñas -->
+
+    <section class="layout__reviews">
+        <div class="reviews__grid">
+
+            <header class="reviews__header">
+                <h4 class="reviews__subtitle">
+                    Reseñas
+
+                </h4>
+                <h2 class="reviews__title">¿Que dicen nuestros clientes?</h2>
+                <p class="reviews__description">
+                    Nuestros clientes siempre salen satisfechos con los sistemas de seguridad electronica.
+                </p>
+
+            </header>
+
+            <!-- Contenedor de resañas -->
+             <div class="reviews__container">
+                <article class="reviews__review">
+                    <span class="review__company">
+                        <!-- la imagen se cambia por la de la empresa -->
+                        <img src="./assets/img/google-2.png" class="review__img"/>
+    
+                    </span>
+    
+                    <p class="review__description">
+                        Integer lobortis, purus a tincidunt lacinia, libero lacus ultrices lectus, sed dapibus erat dolor nec sapien.
+                         Phasellus nec sapien nisl. Vestibulum semper porta odio, sit amet consequat neque.
+    
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/testimonial-2.png">
+    
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">Victor Robles</span>
+                            <span class="author__description">Jefe de seguridad de Ripley</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </article>
+
+                <article class="reviews__review">
+                    <span class="review__company">
+                        <!-- la imagen se cambia por la de la empresa -->
+                        <img src="./assets/img/udemy.png" class="review__img"/>
+    
+                    </span>
+    
+                    <p class="review__description">
+                        Integer lobortis, purus a tincidunt lacinia, libero lacus ultrices lectus, sed dapibus erat dolor nec sapien.
+                         Phasellus nec sapien nisl. Vestibulum semper porta odio, sit amet consequat neque.
+    
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/testimonial-2.png">
+    
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">Victor Robles</span>
+                            <span class="author__description">Jefe de seguridad de Ripley</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </article>
+
+                <article class="reviews__review">
+                    <span class="review__company">
+                        <!-- la imagen se cambia por la de la empresa -->
+                        <img src="./assets/img/youtube.png" class="review__img"/>
+    
+                    </span>
+    
+                    <p class="review__description">
+                        Integer lobortis, purus a tincidunt lacinia, libero lacus ultrices lectus, sed dapibus erat dolor nec sapien.
+                         Phasellus nec sapien nisl. Vestibulum semper porta odio, sit amet consequat neque.
+    
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/testimonial-2.png">
+    
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">Victor Robles</span>
+                            <span class="author__description">Jefe de seguridad de Ripley</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </article>
+
+             </div>
+             
+
+        </div>
+
+        <ul class="reviews__review-shapes">
+            <li class="review-shapes__item review-shapes--shape1">
+                <div class="review-shapes__container">
+                    <img src="./assets/img/bubble-1.png" class="review-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+
+
+    </section>
+
+    <!-- clientes -->
+
+    <section class="layout__clients">
+        <div class="clients__container">
+
+            <header class="clients__header">
+                <h4 class="clients__subtitle">Mejores clientes</h4>
+                <h2 class="clients__title">Hemos creado soluciones para...</h2> 
+                <p class="clients__description">Desarrollamos a medida cualquier proyecto con los mejores sistemas y tecnologias </p>
+
+            </header>
+
+            <div class="clients__logos">
+                <article class="clients__item">
+                    <img src="./assets/img/1-Kantech.png" class="clients__img">
+                </article>
+
+                <article class="clients__item">
+                    <img src="./assets/img/bosch.png" class="clients__img">
+                </article>
+
+                <article class="clients__item">
+                    <img src="./assets/img/cliente6.png" class="clients__img">
+                </article>
+
+                <article class="clients__item">
+                    <img src="./assets/img/cliente5.png" class="clients__img">
+                </article>
+
+            </div>
+
+        </div>
+
+        <ul class="clients__client-shapes">
+            <li class="client-shapes__item client-shapes--shape1">
+                <div class="client-shapes__container">
+                    <img src="./assets/img/line-9.png" class="client-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+
+        
+    </section>
+
+    <!-- noticias -->
+
+    <!-- contacto -->
+
+    <section class="layout__contact">
+        <div class="contact__container">
+            <header class="contact__header">
+                <h4 class="contact_subtitle">Trabajemos juntos</h4>
+                <h2 class="contact__title">¿Creamos tu nuevo proyecto?</h2>
+
+                <a class="contact__btn" href="#">Pedir presupuesto</a>
+
+            </header>
+
+            <div class="contact__images">
+                <div class="contact__thumb contact__thumb--chat">
+                    <img class="contact__img" src="./assets/img/chat-group.png"/>
+
+                </div>
+
+                <div class="contact__thumb contact__thumb--laptop">
+                    <img class="contact__img" src="./assets/img/laptop-poses.png"/>
+
+
+                </div>
+
+                <div class="contact__thumb contact__thumb--mobile">
+                    <img class="contact__img" src="./assets/img/men-mobile.png"/>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <ul class="contact__backshapes">
+            <li class="backshapes__item backshapes--shape1">
+                <img src="./assets/img/bubble-12.png" class="backshapes__img">
+            </li>
+
+            <li class="backshapes__item backshapes--shape2">
+                <img src="./assets/img/bubble-16.png" class="backshapes__img">
+            </li>
+
+            <li class="backshapes__item backshapes--shape3">
+                <img src="./assets/img/bubble-13.png" class="backshapes__img">
+            </li>
+
+            <li class="backshapes__item backshapes--shape4">
+                <img src="./assets/img/bubble-14.png" class="backshapes__img">
+            </li>
+
+            <li class="backshapes__item backshapes--shape5">
+                <img src="./assets/img/bubble-16.png" class="backshapes__img">
+            </li>
+
+            <li class="backshapes__item backshapes--shape6">
+                <img src="./assets/img/bubble-15.png" class="backshapes__img">
+            </li>
+
+            <li class="backshapes__item backshapes--shape7">
+                <img src="./assets/img/bubble-16.png" class="backshapes__img">
+            </li>
+
+        </ul>
+
+
+
+    </section>
+
+    <!-- footer -->
+     <footer class="layout__footer">
+
+        <div class="footer__containes">
+
+            <section class="footer__top">
+                <ul class="footer__social">
+                    <li class="social__item">
+                        <a href="# " class="social__link">
+                            <i class="fa-brands fa-facebook-f social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="# " class="social__link">
+                            <i class="fa-brands fa-x social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="# " class="social__link">
+                            <i class="fa-brands fa-youtube social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="# " class="social__link">
+                            <i class="fa-brands fa-linkedin social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="# " class="social__link">
+                            <i class="fa-brands fa-instagram social__img"></i>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__fleft">
+                    <div class="fleft__container">
+                        <h2 class="fleft__title">Contactanos!</h2>
+                        <p class="fleft__subtitle">Duis orci metus, elementum eu ipsum sollicitudin, congue blandit nisi.
+                            Morbi malesuada ante purus, eu vestibulum ex condimentum sed. 
+                            Pellentesque viverra consequat massa, ut interdum odio ullamcorper non</p>
+
+                        <form class="fleft__form">
+                            <div class="fleft__group">
+                                <span class="fleft__mail-icon">
+                                    <i class="fa-solid fa-envelope-open-text fleft__img"></i>
+                                </span>
+                                <input type="text" class="fleft__form-control" placeholder="Tu correo electronico">
+                                <button type="submit" class="fleft__btn">Suscribete</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="footer__fright">
+                    <div class="footer__widget footer__widget--50">
+                        <h6 class="widget__title">Servicios</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">CCTV</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Sistema Antirobo</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Sistema de Extincion</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Sistema de deteccion</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Recursos</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Sistemas Electricos</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Mantenciones</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Ultima tecnologia</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Soporte</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Contacto</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">   Politica y privacidad</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Terminos de Uso</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="footer__bottom">
+                <div class="footer__copyright">
+                    <span class="copyright__text">
+                        © 2021 Digital Link Chile. Todos los derechos reservados 
+                    </span>
+
+                </div>
+
+                <div class="footer__links">
+                    <ul class="footer__flinks">
+                        <li class="flinks__item flinks__item--separator">
+                            <a href="#" class="flinks__title">Politica de privacidad</a>
+
+                        </li>
+                        <li class="flinks__item">
+                            <a href="#" class="flinks__title">Terminos de uso</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+     </footer>
+
+    </div>
+    
+</body>
+</html>

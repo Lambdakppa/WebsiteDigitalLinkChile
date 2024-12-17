@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Link Chile </title>
+
+    <!-- cargar fuentes  -->
+    <!-- Se cargan los estilos de las fuentes que se descargaron en el archivo predeterminado-->
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
+
+    <!-- cargar estilos -->
+    <!-- Se crea un archivo reset con el fin de que se resetee la pagina donde empazamos a tarabajar
+     y posterior se crea style.css donde estara todo el estilo del sitio web se cargan las rutas  -->
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/dark.css"> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+
+
+    <!-- cargar js -->
+     <script src="assets/js/menu-mobile.js"></script>
+     <script src="assets/js/navbar-fixed.js"></script>
+     <!-- <script src="assets/js/dark.js"></script> -->
+</head>
+<body>
+    <!-- Boton modo oscuro -->
+     <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+
+        </button>
+
+     </div>
+    <!-- menu navegacion responsive -->
+     <div class="menu-mobile">
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a href="index.html" class="menu-mobile__link-logo">
+                    <img  class="menu-mobile__logo" src="assets/img/logotipo.png">
+                </a>
+
+            </div>
+
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+
+            </button>
+
+        </header>
+
+        <div class="menu-mobile__body">
+
+             <!-- NAVEGACION -->
+             <nav class="menu-mobile__nav">
+                <ul class="menu-mobile__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="menu-mobile__item">
+                        <a href="index.html" class="menu-mobile__link">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="menu-mobile__item">
+                        <a href="servicios.html" class="menu-mobile__link">Servicios
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="menu-mobile__submenu-mobile">
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="casosexito.html" class="menu-mobile__link">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="menu-mobile__item">
+                        <a href="about.html" class="menu-mobile__link">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="menu-mobile__item">
+                        <a href="preguntas.html" class="menu-mobile__link">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="contacto.html" class="menu-mobile__link">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+
+        </div>
+
+     </div>
+
+    <!-- layout principal -->
+
+    <div class="layout">
+
+    <!-- Menu -->
+    <section class="layout__menu">
+        <header class="menu__navbar">
+
+            <!-- LOGO -->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__link-logo">
+                    <img src="./assets/img/logohorizontal1.png" class="navbar__logo"/>
+
+                </a>
+
+            </div>
+
+        <!-- Boton de menu responsive -->
+            <div class="navbar__mobile-btn">
+                <button class="mobile-btn__wrap">
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+
+                </button>
+
+            </div>
+
+            <!-- NAVEGACION -->
+             <nav class="navbar__nav">
+                <ul class="nav__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__title">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="nav__item">
+                        <a href="servicios.html" class="nav__title">Servicios
+                            <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="nav__submenu">
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="nav__item">
+                        <a href="casosexito.html" class="nav__title">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__title">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="nav__item">
+                        <a href="preguntas.html" class="nav__title">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__title">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+        
+
+        </header>
+        
+
+    </section>
+
+     <!-- Servicios -------------------------------------------------------->
+     <section class="layout__projects">
+        <div class="projects__grid">
+
+            <!-- cabecera de la parte proyectos -->
+            <header class="projects__header">
+                <p class="services__subtitle">¿Qué podemos hacer por ti?</p>
+                <h2 class="projects__title">Nuestros <br/> servicios </h2>
+            </header>
+
+            <!-- lista de categorias de los proyectos -->
+            <!-- <ul class="projects__categories">
+                <li class="categories__item categories__item--active">
+                    Todos los trabajos
+                </li>
+
+                <li class="categories__item">
+                    CCTV
+                </li>
+
+                <li class="categories__item">
+                    Control de Acceso
+                </li>
+
+            </ul> -->
+
+            <!-- lista de proyectos -->
+            <div class="projects__all"> 
+
+                <!-- seccion de proyecto -->
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/cctv1.png" class="project__img">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema CCTV</a>
+                        </h3>
+                        <div class="project__tags">
+                
+                            <span class="project__tag">Un sistema de CCTV (Circuito Cerrado de Televisión) es una tecnología de videovigilancia que permite monitorear y grabar actividades en diversas áreas para mejorar la seguridad y vigilancia.</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/Descarga-fm-200png.png" class="project__img">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Panel Mircom FX-351</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Es un sistema de control de alarmas contra incendios que proporciona una solución confiable y eficiente para la detección y notificación de incendios en edificios comerciales y residenciales.</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/Sistema-de-aspiracion-1.png" class="project__img">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema de aspiracion</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Un sistema de aspiración es un sistema de detección de humo que utiliza tubos y sensores para aspirar aire y detectar partículas de humo en el ambiente, proporcionando una detección temprana de incendios.</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/SALA-DE-BOMBA.png" class="project__img">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema de Extincion</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Un sistema de extinción es un conjunto de dispositivos y equipos diseñados para detectar y suprimir incendios de manera automática o manual, protegiendo vidas y propiedades.</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/Detector-de-intrusion-ventana.png" class="project__img">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema de antirobo</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Un sistema antirobo es un conjunto de dispositivos diseñados para detectar y prevenir intrusiones no autorizadas, protegiendo propiedades y bienes.</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/Control-de-acceso.png" class="project__img">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema Control de acceso</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Un sistema de control de acceso es una solución de seguridad que permite gestionar y restringir el acceso a áreas específicas mediante el uso de credenciales como tarjetas, códigos o datos biométricos, garantizando que solo personas autorizadas puedan ingresar.</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article> 
+
+
+            </div>
+
+        </div>
+
+        <ul class="projects__project-shapes">
+            <li class="project-shapes__item project-shapes--shape1">
+                <div class="project-shapes__container">
+                    <img src="./assets/img/circle-2.png" class="project-shapes__img">
+
+                </div>
+
+            </li>
+
+            <li class="project-shapes__item project-shapes--shape2">
+                <div class="project-shapes__container">
+                    <img src="./assets/img/bubble-2.png" class="project-shapes__img">
+
+                </div>
+
+            </li>
+
+            <li class="project-shapes__item project-shapes--shape3">
+                <div class="project-shapes__container">
+                    <img src="./assets/img/bubble-1.png" class="project-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+     </section>
+
+
+     <!-- footer ------------------------------------------------------------>
+     <footer class="layout__footer">
+
+        <div class="footer__containes">
+
+            <section class="footer__top">
+                <ul class="footer__social">
+                    
+
+                    <li class="social__item">
+                        <a href="https://x.com/DigitalLinkSPA " class="social__link">
+                            <i class="fa-brands fa-x social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.youtube.com/@DigitalLinkChile " class="social__link">
+                            <i class="fa-brands fa-youtube social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.linkedin.com/company/digital-link-chile/ " class="social__link">
+                            <i class="fa-brands fa-linkedin social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/digitallinkchile/ " class="social__link">
+                            <i class="fa-brands fa-instagram social__img"></i>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__fleft">
+                    <div class="fleft__container">
+                        <h2 class="fleft__title">Contactanos!</h2>
+                            <p class="fleft__subtitle">
+                                Estamos aquí para ayudarte con cualquier consulta o proyecto que tengas en mente. 
+                                Nuestro equipo de expertos está disponible para ofrecerte la mejor solución en seguridad electrónica. 
+                                No dudes en contactarnos dejando tu correo para obtener más información sobre nuestros servicios y cómo podemos ayudarte a proteger lo que más te importa.
+                            </p>
+
+                            <div class="footer__contact-info">
+                                <ul class="contact-info__list">
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                                        <span class="contact-info__text">+56 9 2007 9581</span>
+                                    </li>
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                                        <span class="contact-info__text">+56 9 3785 9616</span>
+                                    </li>
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-envelope contact-info__icon"></i>
+                                        <span class="contact-info__text">info@digitallinkchile.cl</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        <!-- <form class="fleft__form">
+                            <div class="fleft__group">
+                                <span class="fleft__mail-icon">
+                                    <i class="fa-solid fa-envelope-open-text fleft__img"></i>
+                                </span>
+                                <input type="text" class="fleft__form-control" placeholder="Tu correo electronico">
+                                <button src="contacto.html" type="submit" class="fleft__btn">Enviar</button>
+                            </div>
+                        </form> -->
+
+                    </div>
+
+                </div>
+
+                <div class="footer__fright">
+                    <div class="footer__widget footer__widget--50">
+                        <h6 class="widget__title">Servicios</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">CCTV</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema Antirobo</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema de Extincion</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema de deteccion</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Recursos</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Sistemas Electricos</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Mantenciones</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Ultima tecnologia</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Soporte</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="contacto.html" class="widget__link">Contacto</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">   Politica y privacidad</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Terminos de Uso</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="footer__bottom">
+                <div class="footer__copyright">
+                    <span class="copyright__text">
+                        © 2021 Digital Link Chile. Todos los derechos reservados 
+                    </span>
+
+                </div>
+
+                <!-- <div class="footer__links">
+                    <ul class="footer__flinks">
+                        <li class="flinks__item flinks__item--separator">
+                            <a href="#" class="flinks__title">Politica de privacidad</a>
+
+                        </li>
+                        <li class="flinks__item">
+                            <a href="#" class="flinks__title">Terminos de uso</a>
+
+                        </li>
+
+                    </ul>
+
+                </div> -->
+
+
+            </section>
+
+        </div>
+
+     </footer>
+
+    </div>
+    
+</body>
+</html>

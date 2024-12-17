@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Link Chile </title>
+
+    <!-- cargar fuentes  -->
+    <!-- Se cargan los estilos de las fuentes que se descargaron en el archivo predeterminado-->
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
+
+    <!-- cargar estilos -->
+    <!-- Se crea un archivo reset con el fin de que se resetee la pagina donde empazamos a tarabajar
+     y posterior se crea style.css donde estara todo el estilo del sitio web se cargan las rutas  -->
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/dark.css"> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+
+
+    <!-- cargar js -->
+     <script src="assets/js/menu-mobile.js"></script>
+     <script src="assets/js/navbar-fixed.js"></script>
+     <script src="assets/js/dark.js"></script>
+     <script src="assets/js/presupuesto.js"></script>
+     <script src="assets/js/emailSend.js"></script>
+</head>
+<body>
+    <!-- Boton modo oscuro -->
+     <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+
+        </button>
+
+     </div>
+    <!-- menu navegacion responsive -->
+     <div class="menu-mobile">
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a href="index.html" class="menu-mobile__link-logo">
+                    <img  class="menu-mobile__logo" src="assets/img/logotipo.png">
+                </a>
+
+            </div>
+
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+
+            </button>
+
+        </header>
+
+        <div class="menu-mobile__body">
+
+             <!-- NAVEGACION -->
+             <nav class="menu-mobile__nav">
+                <ul class="menu-mobile__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="menu-mobile__item">
+                        <a href="index.html" class="menu-mobile__link">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="menu-mobile__item">
+                        <a href="servicios.html" class="menu-mobile__link">Servicios
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="menu-mobile__submenu-mobile">
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="casosexito.html" class="menu-mobile__link">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="menu-mobile__item">
+                        <a href="about.html" class="menu-mobile__link">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="menu-mobile__item">
+                        <a href="preguntas.html" class="menu-mobile__link">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="contacto.html" class="menu-mobile__link">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+
+        </div>
+
+     </div>
+
+    <!-- layout principal -->
+
+    <div class="layout">
+
+    <!-- Menu -->
+    <section class="layout__menu">
+        <header class="menu__navbar">
+
+            <!-- LOGO -->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__link-logo">
+                    <img src="./assets/img/logohorizontal1.png" class="navbar__logo"/>
+
+                </a>
+
+            </div>
+
+        <!-- Boton de menu responsive -->
+            <div class="navbar__mobile-btn">
+                <button class="mobile-btn__wrap">
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+
+                </button>
+
+            </div>
+
+            <!-- NAVEGACION -->
+             <nav class="navbar__nav">
+                <ul class="nav__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__title">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="nav__item">
+                        <a href="servicios.html" class="nav__title">Servicios
+                            <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="nav__submenu">
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="nav__item">
+                        <a href="casosexito.html" class="nav__title">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__title">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="nav__item">
+                        <a href="preguntas.html" class="nav__title">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__title">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+        
+
+        </header>
+        
+
+    </section>
+
+    
+    <!-- servicios -->
+    <section class="layout__services">
+
+        <div class="services__grid">
+
+            <!-- Contenido de la cabecera de los servicios -->
+          <header class="services__header">
+             <p class="services__subtitle">¿Que podemos hacer por ti?</p>
+            <h2 class="services__title">Servicios que te <br> pueden ayudar</h2>
+          </header>
+
+         <!-- se crea un div para almacenar un pequeña lista con los articulos/servicios que ofrece -->
+
+          <div class="services__list">
+             <article class="services__service services__service--bottom">
+                <div class="service__container-img">
+                    <img class="service__img" src="./assets/img/icon-1.png" alt="Diseño"/>
+                </div>
+
+                <div class="service__content">
+                    <h3 class="service__title">
+                        <a href="#" class="service__link">CCTV</a>
+                    </h3>
+
+                    <p class="service__description">Intalacion enfocandose en su mantencion, revision asesoria posteriormente</p>
+                    <a class="service__more" href="servicios.html">Leer más</a>
+                </div>
+
+             </article>
+
+            <article class="services__service services__service--middle">
+                <div class="service__container-img">
+                    <img class="service__img" src="./assets/img/icon-2.png" alt="control"/>
+                </div>
+
+                <div class="service__content">
+                    <h3 class="service__title">
+                        <a href="#" class="service__link">Control de Acceso</a>
+                    </h3>
+
+                    <p class="service__description">aportamos con controles de acceso instalados por nuestros mismos trabajadores que realizan asesoria y mantenciones posteriores</p>
+                    <a class="service__more" href="servicios.html">Leer más</a>
+                </div>
+
+            </article>
+
+            <article class="services__service services__service--top">
+                <div class="service__container-img">
+                    <img class="service__img" src="./assets/img/icon-3.png" alt="Diseño"/>
+                </div>
+
+                <div class="service__content">
+                    <h3 class="service__title">
+                        <a href="#" class="service__link">Alarma contra Robos</a>
+                    </h3>
+
+                    <p class="service__description">Intalacion enfocandose en su mantencion, revision asesoria posteriormente</p>
+                    <a class="service__more" href="servicios.html">Leer más</a>
+                </div>
+
+            </article>
+          </div>
+
+        </div>
+
+        <!-- lista de imagenes que van en el servicio -->
+
+        <ul class="services__service-shapes">
+            <li class="service-shapes__item service-shapes--shape1">
+                <div class="service-shapes__container">
+                    <img src="./assets/img/circle-2.png" class="service-shapes__img">
+
+                </div>
+
+            </li>
+
+            <li class="service-shapes__item service-shapes--shape2">
+                <div class="service-shapes__container">
+                    <img src="./assets/img/bubble-2.png" class="service-shapes__img">
+
+                </div>
+
+            </li>
+
+            <li class="service-shapes__item service-shapes--shape3">
+                <div class="service-shapes__container">
+                    <img src="./assets/img/bubble-1.png" class="service-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+
+        
+    </section>
+    
+
+
+<!-- Formulario de Contacto y Presupuesto -->
+<section class="contact__form-section">
+    <div class="contact__form-container">
+        <h2 class="contact__form-title">Contáctanos y Solicita tu Presupuesto</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="project-details">Detalles del Proyecto:</label>
+                <textarea id="project-details" name="project-details" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="budget">Presupuesto Aproximado:</label>
+                <input type="number" id="budget" name="budget" required>
+            </div>
+            <input type="submit" class="btn btn-success" id="button" value="ENVIAR MENSAJE" >
+        </form>
+    </div>
+</section>
+
+<!-- Añade el script de EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init('rmb_8xOBMnwvZq4b7'); // Reemplaza "YOUR_USER_ID" con tu User ID de EmailJS
+   })();
+</script>
+
+<script type="text/javascript">
+   document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const btn = document.getElementById('button');
+      btn.value = 'Enviando...';
+
+      const serviceID = 'default_service';
+      const templateID = 'template_xcfwful';
+
+      emailjs.sendForm(serviceID, templateID, this)
+         .then(() => {
+            btn.value = 'ENVIAR MENSAJE';
+            alert('ENVIO EXITOSO!');
+         }, (err) => {
+            btn.value = 'ENVIAR MENSAJE';
+            alert(JSON.stringify(err));
+         });
+   });
+</script>
+
+    <!-- footer ------------------------------------------------------------>
+    <footer class="layout__footer">
+
+        <div class="footer__containes">
+
+            <section class="footer__top">
+                <ul class="footer__social">
+                    
+
+                    <li class="social__item">
+                        <a href="https://x.com/DigitalLinkSPA " class="social__link">
+                            <i class="fa-brands fa-x social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.youtube.com/@DigitalLinkChile " class="social__link">
+                            <i class="fa-brands fa-youtube social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.linkedin.com/company/digital-link-chile/ " class="social__link">
+                            <i class="fa-brands fa-linkedin social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/digitallinkchile/ " class="social__link">
+                            <i class="fa-brands fa-instagram social__img"></i>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__fleft">
+                    <div class="fleft__container">
+                        <h2 class="fleft__title">Contactanos!</h2>
+                            <p class="fleft__subtitle">
+                                Estamos aquí para ayudarte con cualquier consulta o proyecto que tengas en mente. 
+                                Nuestro equipo de expertos está disponible para ofrecerte la mejor solución en seguridad electrónica. 
+                                No dudes en contactarnos dejando tu correo para obtener más información sobre nuestros servicios y cómo podemos ayudarte a proteger lo que más te importa.
+                            </p>
+
+                            <div class="footer__contact-info">
+                                <ul class="contact-info__list">
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                                        <span class="contact-info__text">+56 9 2007 9581</span>
+                                    </li>
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                                        <span class="contact-info__text">+56 9 3785 9616</span>
+                                    </li>
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-envelope contact-info__icon"></i>
+                                        <span class="contact-info__text">info@digitallinkchile.cl</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        <!-- <form class="fleft__form">
+                            <div class="fleft__group">
+                                <span class="fleft__mail-icon">
+                                    <i class="fa-solid fa-envelope-open-text fleft__img"></i>
+                                </span>
+                                <input type="text" class="fleft__form-control" placeholder="Tu correo electronico">
+                                <button type="submit" class="fleft__btn">Enviar</button>
+                            </div>
+                        </form> -->
+
+                    </div>
+
+                </div>
+
+                <div class="footer__fright">
+                    <div class="footer__widget footer__widget--50">
+                        <h6 class="widget__title">Servicios</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">CCTV</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema Antirobo</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema de Extincion</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema de deteccion</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Recursos</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Sistemas Electricos</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Mantenciones</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Ultima tecnologia</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Soporte</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="contacto.html" class="widget__link">Contacto</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">   Politica y privacidad</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Terminos de Uso</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="footer__bottom">
+                <div class="footer__copyright">
+                    <span class="copyright__text">
+                        © 2021 Digital Link Chile. Todos los derechos reservados 
+                    </span>
+
+                </div>
+
+                <!-- <div class="footer__links">
+                    <ul class="footer__flinks">
+                        <li class="flinks__item flinks__item--separator">
+                            <a href="#" class="flinks__title">Politica de privacidad</a>
+
+                        </li>
+                        <li class="flinks__item">
+                            <a href="#" class="flinks__title">Terminos de uso</a>
+
+                        </li>
+
+                    </ul>
+
+                </div> -->
+
+
+            </section>
+
+        </div>
+
+     </footer>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Link Chile </title>
+
+    <!-- cargar fuentes  -->
+    <!-- Se cargan los estilos de las fuentes que se descargaron en el archivo predeterminado-->
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
+
+    <!-- cargar estilos -->
+    <!-- Se crea un archivo reset con el fin de que se resetee la pagina donde empazamos a tarabajar
+     y posterior se crea style.css donde estara todo el estilo del sitio web se cargan las rutas  -->
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/dark.css"> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+
+
+    <!-- cargar js -->
+     <script src="assets/js/menu-mobile.js"></script>
+     <script src="assets/js/navbar-fixed.js"></script>
+     <script src="assets/js/carousel.js"></script>
+     <!-- <script src="assets/js/dark.js"></script> -->
+</head>
+<body>
+    <!-- Boton modo oscuro -->
+     <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+
+        </button>
+
+     </div>
+    <!-- menu navegacion responsive -->
+     <div class="menu-mobile">
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a href="index.html" class="menu-mobile__link-logo">
+                    <img  class="menu-mobile__logo" src="assets/img/logotipo.png">
+                </a>
+
+            </div>
+
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+
+            </button>
+
+        </header>
+
+        <div class="menu-mobile__body">
+
+             <!-- NAVEGACION -->
+             <nav class="menu-mobile__nav">
+                <ul class="menu-mobile__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="menu-mobile__item">
+                        <a href="index.html" class="menu-mobile__link">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="menu-mobile__item">
+                        <a href="servicios.html" class="menu-mobile__link">Servicios
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="menu-mobile__submenu-mobile">
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="casosexito.html" class="menu-mobile__link">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="menu-mobile__item">
+                        <a href="about.html" class="menu-mobile__link">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="menu-mobile__item">
+                        <a href="preguntas.html" class="menu-mobile__link">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="menu-mobile__item">
+                        <a href="contacto.html" class="menu-mobile__link">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+
+        </div>
+
+     </div>
+
+    <!-- layout principal -->
+
+    <div class="layout">
+
+    <!-- Menu -->
+    <section class="layout__menu">
+        <header class="menu__navbar">
+
+            <!-- LOGO -->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__link-logo">
+                    <img src="./assets/img/logohorizontal1.png" class="navbar__logo"/>
+
+                </a>
+
+            </div>
+
+        <!-- Boton de menu responsive -->
+            <div class="navbar__mobile-btn">
+                <button class="mobile-btn__wrap">
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+                    <span class="mobile-btn__line"></span>
+
+                </button>
+
+            </div>
+
+            <!-- NAVEGACION -->
+             <nav class="navbar__nav">
+                <ul class="nav__list">
+                    <!-- titulos en la navegacion -->
+
+                     <!-- Inicio -->
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__title">Inicio</a>
+
+                    </li>
+
+                    <!-- Servicios-->
+
+                    <li class="nav__item">
+                        <a href="servicios.html" class="nav__title">Servicios
+                            <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+
+                        <!-- Submenu dentro de nav que muestra menu de servicios -->
+                        <ul class="nav__submenu">
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">CCTV</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Alarma Contra Robo</a>
+
+                            </li>
+
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Deteccion y Extincion de incendio</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- CASOS DE EXITO -->
+
+                    <li class="nav__item">
+                        <a href="casosexito.html" class="nav__title">Casos de Éxito
+                        </a>
+
+                    </li>
+
+                    <!-- NOSOTROS -->
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__title">Nosotros
+                        </a>
+
+                    </li>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+
+                    <li class="nav__item">
+                        <a href="preguntas.html" class="nav__title">Preguntas Frecuentes</a>
+
+                    </li>
+
+                    <!-- CONTACTO -->
+
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__title">Contacto</a>
+
+                    </li>
+
+                </ul>
+
+                
+
+             </nav>
+        
+
+        </header>
+        
+
+    </section>
+
+ 
+
+    <!-- Casos de Exito ----------------------------------------------------------->
+
+    <section class="layout__reviews">
+        <div class="reviews__grid">
+
+            <header class="reviews__header">
+                <h4 class="reviews__subtitle">
+                    Casos de Éxito
+
+                </h4>
+                <h2 class="reviews__title">Nuestro trabajo en acción</h2>
+                <p class="reviews__description">
+                    Un breve repaso de algunos de nuestros trabajos en funcionamiento, comentando detalles técnicos
+                </p>
+
+            </header>
+<!-- OJO CON LOS CONTENEDORES, al agregar mas texto se agranda el iframe del video, lo cual no deberia pasar ------------------------------------------------------------->
+            <!-- Contenedor de resañas -->
+             <div class="reviews__container">
+                <article class="reviews__review">
+                    
+                    <div class="contenedor_video_casoexito">
+                        <iframe class="video_casoexito"src="https://www.youtube.com/embed/UYY8zq2xRqI?si=5EQPHvJfhsbg6YGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+    
+                    <p class="review__description">
+                        En la tienda ripley del costanera Center. se realizó el reemplazo de 2 paneles de descarga en la sala eléctrica y la sala de datos de la tienda. El trabajo fue exitoso, ya que no tuvimos ningún inconveniente técnico y los paneles quedaron en correcto funcionamiento.
+    
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/logotipo.png">
+    
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">Digital link Chile - Ripley</span>
+                            <span class="author__description">Lorena Villagra Directora General DigitalLinkChile</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </article>
+
+                <article class="reviews__review">
+                    
+                    <div class="contenedor_video_casoexito">
+                        <iframe class="video_casoexito" src="https://www.youtube.com/embed/MIS64f2AGFc?si=rsQuOYQWW0R7-7pP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>   
+                    <p class="review__description">
+                        Ejecución de pruebas de operación y funcionamiento a Sistema de Descarga NOVEC 1230, con Simulación de activaciones por zona cruzada.
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/logotipo.png">
+    
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">Digital Link chile  </span>
+                            <span class="author__description">Director de operaciones DigitalLinkChile</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </article>
+
+                <article class="reviews__review">
+                   
+                    <div class="contenedor_video_casoexito">
+                        <iframe class="video_casoexito" src="https://www.youtube.com/embed/gvg6LhEBiQE?si=Mh5J2ZPafyM0_oLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+    
+                    <p class="review__description">
+                        Ejecucion de pruebas en Sistema de detección de incendio, a dos eventos - Sistema EDWARD EST 3.
+    
+                    </p>
+    
+                    <div class="review__author">
+                        <div class="author__container-img">
+                            <img class="author__img" src="./assets/img/logotipo.png">
+    
+                        </div>
+    
+                        <div class="author__content">
+                            <span class="author__name">Digital Link Chile</span>
+                            <span class="author__description">Director de operaciones DigitalLinkChile</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </article>
+
+                
+
+             </div>
+             
+
+        </div>
+
+        <ul class="reviews__review-shapes">
+            <li class="review-shapes__item review-shapes--shape1">
+                <div class="review-shapes__container">
+                    <img src="./assets/img/bubble-1.png" class="review-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+
+
+    </section>
+       <!-- estadisticas ------------------------------------------------------>
+
+       <section class="layout__stats">
+        <div class="stats__container">
+
+            <!-- cabecera de la parte de estadisticas -->
+            <header class="stats__header">
+                <h4 class="stats__subtitle">Agencia de Seguridad electronica</h4>
+                <h2 class="stats__title">Estadisticas de trabajos realizados</h2>
+                <p class="stats__description">
+                    aqui puedes ver un resumen de nuestras estadisticas en estos años de trabajo.
+                </p>
+            </header>
+
+            <!-- lista de estadisticas -->
+
+            <div class="stats__progress">
+                <article class="stats__stat" >
+                    <div class="stat__icon">
+                        <img src="./assets/img/icon-7.png" />
+
+                    </div>
+
+                    <span class="stat__count">+10</span>
+
+                    <h6 class="stat__title"> Años Experiencia</h6>
+
+
+
+                </article>
+
+                <article class="stats__stat" >
+                    <div class="stat__icon">
+                        <img src="./assets/img/icon-8.png" />
+
+                    </div>
+
+                    <span class="stat__count">+50</span>
+
+                    <h6 class="stat__title">Trabajos Realizados</h6>
+
+
+
+                </article>
+
+                <article class="stats__stat" >
+                    <div class="stat__icon">
+                        <img src="./assets/img/icon-9.png" />
+
+                    </div>
+
+                    <span class="stat__count">+20</span>
+
+                    <h6 class="stat__title"> Clientes</h6>
+
+
+
+                </article>
+
+                <article class="stats__stat" >
+                    <div class="stat__icon">
+                        <img src="./assets/img/apple.png" />
+
+                    </div>
+
+                    <span class="stat__count">+10</span>
+
+                    <h6 class="stat__title"> Especialistas</h6>
+
+
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- proyectos -->
+    <section class="layout__projects">
+        <div class="projects__grid">
+
+            <!-- cabecera de la parte proyectos -->
+            <header class="projects__header">
+                <p class="projects__subtitle">Nuestros proyecto</p>
+                <h2 class="projects__title">Alguno de nuestros <br/> mejores trabajos </h2>
+            </header>
+
+            <!-- lista de categorias de los proyectos -->
+            <ul class="projects__categories">
+                <li class="categories__item categories__item--active">
+                    Todos los trabajos
+                </li>
+
+                <li class="categories__item">
+                    CCTV
+                </li>
+
+                <li class="categories__item">
+                    Control de Acceso
+                </li>
+
+                <li class="categories__item">
+                    Sistema de detección y extinción
+                </li>
+                <li class="categories__item">
+                    Antirobo
+                </li>
+
+            </ul>
+
+            <!-- lista de proyectos -->
+            <div class="projects__all"> 
+
+                <!-- seccion de proyecto -->
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/prueba.png" class="project__img" style="width: 100%; height: auto;">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema de Deteccion</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">ruebas de funcionamiento a equipos Instalados, en proyecto de reparación.
+
+                                MARCA: EDWARDS
+                                MODELO: EST 3
+                            </span>
+                                
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/proyecto sistemadeteccio.png" class="project__img" style="width: 100%; height: auto;">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema de deteccion</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">uministro y Cambio de Panel de Incendio.
+
+                                EQUIPO: IO-1000
+                                MARCA: EDWARD</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/cctvexito.png" class="project__img" style="width: 100%; height: auto;">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema CCTV</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">SMantenimiento Preventivo a Sistema de CCTV.
+
+                                MARCA: BOSCH</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/ALARMA.png" class="project__img" style="width: 100%; height: auto;">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Alarma antirobo</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Proceso de habilitacion y puesta en marcha de alarma antirobo</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/controldeacceso.png" class="project__img" >
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Control de acceso</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Reparacion de sistema de control de Acceso</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <article class="projects__project">
+                    <div class="project__container-img">
+                        <a href="#" class="project__link-img">
+                            <img src="./assets/img/revisioncctv.png" class="project__img" style="width: 100%; height: auto;">
+                        </a>
+
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__title">
+                            <a href="#" class="project__link-title">Sistema CCTV</a>
+                        </h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Instalacion de sistema cctv</span>
+
+                        </div>
+
+                    </div>
+
+
+                </article> 
+
+
+            </div>
+
+        </div>
+
+        <ul class="projects__project-shapes">
+            <li class="project-shapes__item project-shapes--shape1">
+                <div class="project-shapes__container">
+                    <img src="./assets/img/circle-2.png" class="project-shapes__img">
+
+                </div>
+
+            </li>
+
+            <li class="project-shapes__item project-shapes--shape2">
+                <div class="project-shapes__container">
+                    <img src="./assets/img/bubble-2.png" class="project-shapes__img">
+
+                </div>
+
+            </li>
+
+            <li class="project-shapes__item project-shapes--shape3">
+                <div class="project-shapes__container">
+                    <img src="./assets/img/bubble-1.png" class="project-shapes__img">
+
+                </div>
+
+            </li>
+
+        </ul>
+     </section>
+
+    
+
+    <!-- footer ------------------------------------------------------------>
+    <footer class="layout__footer">
+
+        <div class="footer__containes">
+
+            <section class="footer__top">
+                <ul class="footer__social">
+                    
+
+                    <li class="social__item">
+                        <a href="https://x.com/DigitalLinkSPA " class="social__link">
+                            <i class="fa-brands fa-x social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.youtube.com/@DigitalLinkChile " class="social__link">
+                            <i class="fa-brands fa-youtube social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.linkedin.com/company/digital-link-chile/ " class="social__link">
+                            <i class="fa-brands fa-linkedin social__img"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/digitallinkchile/ " class="social__link">
+                            <i class="fa-brands fa-instagram social__img"></i>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__fleft">
+                    <div class="fleft__container">
+                        <h2 class="fleft__title">Contactanos!</h2>
+                            <p class="fleft__subtitle">
+                                Estamos aquí para ayudarte con cualquier consulta o proyecto que tengas en mente. 
+                                Nuestro equipo de expertos está disponible para ofrecerte la mejor solución en seguridad electrónica. 
+                                No dudes en contactarnos dejando tu correo para obtener más información sobre nuestros servicios y cómo podemos ayudarte a proteger lo que más te importa.
+                            </p>
+
+                            <div class="footer__contact-info">
+                                <ul class="contact-info__list">
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                                        <span class="contact-info__text">+56 9 2007 9581</span>
+                                    </li>
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                                        <span class="contact-info__text">+56 9 3785 9616</span>
+                                    </li>
+                                    <li class="contact-info__item">
+                                        <i class="fa-solid fa-envelope contact-info__icon"></i>
+                                        <span class="contact-info__text">info@digitallinkchile.cl</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        <!-- <form class="fleft__form">
+                            <div class="fleft__group">
+                                <span class="fleft__mail-icon">
+                                    <i class="fa-solid fa-envelope-open-text fleft__img"></i>
+                                </span>
+                                <input type="text" class="fleft__form-control" placeholder="Tu correo electronico">
+                                <button type="submit" class="fleft__btn">Enviar</button>
+                            </div>
+                        </form> -->
+
+                    </div>
+
+                </div>
+
+                <div class="footer__fright">
+                    <div class="footer__widget footer__widget--50">
+                        <h6 class="widget__title">Servicios</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">CCTV</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Control De Acceso</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema Antirobo</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema de Extincion</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="servicios.html" class="widget__link">Sistema de deteccion</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Recursos</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Sistemas Electricos</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Mantenciones</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Ultima tecnologia</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__widget footer__widget--25">
+                        <h6 class="widget__title">Soporte</h6>
+
+                        <ul class="widget__list">
+                            <li class="widget__item">
+                                <a href="contacto.html" class="widget__link">Contacto</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">   Politica y privacidad</a>
+
+                            </li>
+
+                            <li class="widget__item">
+                                <a href="#" class="widget__link">Terminos de Uso</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <section class="footer__bottom">
+                <div class="footer__copyright">
+                    <span class="copyright__text">
+                        © 2021 Digital Link Chile. Todos los derechos reservados 
+                    </span>
+
+                </div>
+
+                <!-- <div class="footer__links">
+                    <ul class="footer__flinks">
+                        <li class="flinks__item flinks__item--separator">
+                            <a href="#" class="flinks__title">Politica de privacidad</a>
+
+                        </li>
+                        <li class="flinks__item">
+                            <a href="#" class="flinks__title">Terminos de uso</a>
+
+                        </li>
+
+                    </ul>
+
+                </div> -->
+
+
+            </section>
+
+        </div>
+
+     </footer>
+
+    </div>
+    
+</body>
+</html>
